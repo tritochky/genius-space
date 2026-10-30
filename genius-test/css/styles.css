@@ -1,3 +1,36 @@
+/* poppins-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/poppins-v24-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/poppins-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/poppins-v24-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-900 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/poppins-v24-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /* Змінні */
 :root {
     --color-brend-light: #819b57;
@@ -18,6 +51,14 @@ body {
     padding: 0;
     background-color: var(--color-primary-light); */
     color: var(--color-primary-dark);
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+address {
+    font-style: normal;
 }
 
 /* Buttons */
@@ -30,6 +71,7 @@ body {
     background-color: var(--color-brend-light);
     color: var(--color-primary-light);
     cursor: pointer;
+    font-weight: 600;
 }
 
 .button:hover {
@@ -39,9 +81,6 @@ body {
 
 /* Links */
 .link {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
     text-align: center;
     color: var(--color-primary-light);
 }
@@ -53,10 +92,9 @@ body {
 
 /* Hero-section */
 .hero-title {
-    /*     font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 48px;
-    text-align: center; */
+    font-weight: 900;
+    font-size: 128px;
+    text-align: center;
     color: var(--color-primary-light);
 }
 
@@ -66,23 +104,73 @@ body {
 
 /* Advantages-section */
 .advantages-list {
-    /*     font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+    /*    
     text-align: center; */
     background-color: var(--color-brend-light);
     color: var(--color-primary-light);
 }
 
-/* .section-title {
-         font-family: "Poppins", sans-serif;
+.advantages-item {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+    /*     text-align: center;
+    padding: 16px 0; */
+}
+
+.section-title {
     font-weight: 900;
     font-size: 64px;
-    line-height: 131%;
-    text-align: center; 
-    color: var(--color-primary-dark);
-} */
+    line-height: 1.3;
+    /*text-align: center; 
+    color: var(--color-primary-dark); */
+}
 
 .section-title .accent {
     color: var(--color-brend-dark);
+}
+
+/* Traditios-section */
+.traditions-text .brand {
+    color: var(--color-brend-light);
+    font-weight: 600;
+}
+
+.traditions-text .uppercase {
+    text-transform: uppercase;
+}
+
+/* Chef-section */
+.chef-title {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+/* Format-section */
+.format-title {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.format-text {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/* Footer */
+.address-link {
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--color-primary-light);
+    text-decoration: none;
+}
+
+.address-link:hover {
+    /* font-weight: 600; */
+    color: var(--color-brend-light);
+}
+
+.addres-copyright {
+    font-size: 16px;
+    /* color: var(--color-primary-light); */
 }
