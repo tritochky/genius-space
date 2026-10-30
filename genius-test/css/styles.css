@@ -1,0 +1,88 @@
+/* Змінні */
+:root {
+    --color-brend-light: #819b57;
+    --color-brend-dark: #465929;
+    --color-primary-light: #faf4ea;
+    --color-primary-dark: #31261a;
+}
+
+/* Base */
+ul {
+    list-style-type: none;
+    /*     padding: 0;
+    margin: 0; */
+}
+
+body {
+    /*     margin: 0;
+    padding: 0;
+    background-color: var(--color-primary-light); */
+    color: var(--color-primary-dark);
+}
+
+/* Buttons */
+.button {
+    border: 2px solid var(--color-brend-light);
+    border-radius: 8px;
+    padding: 16px 32px;
+    width: 238px;
+    height: 59px;
+    background-color: var(--color-brend-light);
+    color: var(--color-primary-light);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--color-brend-dark);
+}
+
+/* Links */
+.link {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: var(--color-primary-light);
+}
+
+.link:hover {
+    font-weight: 600;
+    color: var(--color-brend-light);
+}
+
+/* Hero-section */
+.hero-title {
+    /*     font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center; */
+    color: var(--color-primary-light);
+}
+
+.hero-title .accent {
+    color: var(--color-brend-light);
+}
+
+/* Advantages-section */
+.advantages-list {
+    /*     font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center; */
+    background-color: var(--color-brend-light);
+    color: var(--color-primary-light);
+}
+
+/* .section-title {
+         font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 131%;
+    text-align: center; 
+    color: var(--color-primary-dark);
+} */
+
+.section-title .accent {
+    color: var(--color-brend-dark);
+}
