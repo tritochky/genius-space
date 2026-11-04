@@ -10,7 +10,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet"> -->
-        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/main.min.css">
     </head>
     <body>
         <header class="header">
@@ -34,8 +34,9 @@
                         </ul>
                     </nav>
                     <button class="button modal-btn-open" type="button">Замовити
-                        дзвінок</button></div>
-
+                        дзвінок
+                    </button>
+                </div>
             </div>
         </header>
         <main>
@@ -155,6 +156,9 @@
                         <ul class="formats-list">
                             <li class="formats-item">
                                 <article class="format-card">
+                                    <img class="format-image"
+                                        src="./images/walrus-format.jpg"
+                                        alt="Інтер'єр пекарні формату Walrus з дерев'яними столами та стільцями, на яких сидять відвідувачі">
                                     <h3 class="format-title"
                                         lang="en">Walrus</h3>
                                     <div class="format-text">
@@ -171,6 +175,9 @@
                             </li>
                             <li class="formats-item">
                                 <article class="format-card">
+                                    <img class="format-image"
+                                        src="./images/horseshoe-format.jpg"
+                                        alt="Інтер'єр пекарні формату Horseshoe з дерев'яними столами та стільцями, на яких сидять відвідувачі">
                                     <h3 class="format-title"
                                         lang="en">Horseshoe</h3>
                                     <div class="format-text">
@@ -187,6 +194,9 @@
                             </li>
                             <li class="formats-item">
                                 <article class="format-card">
+                                    <img class="format-image"
+                                        src="./images/handlebar-format.jpg"
+                                        alt="Інтер'єр пекарні формату Handlebar з дерев'яними столами та стільцями, на яких сидять відвідувачі">
                                     <h3 class="format-title"
                                         lang="en">Handlebar</h3>
                                     <div class="format-text">
@@ -335,7 +345,7 @@
                 </div>
             </div>
         </footer>
-        <div class="backdrop">
+        <div class="backdrop is-hidden">
             <div class="modal">
                 <button class="modal-btn-close"
                     type="button">Close</button>
@@ -343,7 +353,7 @@
                 <p class="modal-text">Залишіть заявку та наш спеціаліст
                     зв'яжеться з Вами!</p>
                 <form class="modal-form" name="contact-form" autocomplete="off"
-                    novalidate method="post">
+                    method="post">
                     <div class="form-field">
                         <label class="form-label visually-hidden"
                             for="user-name">Ім'я</label>
@@ -354,16 +364,15 @@
                         <label class="form-label visually-hidden"
                             for="user-tel">Телефон</label>
                         <input class="form-input" type="tel" id="user-tel"
-                            name="user-tel"
-                            required placeholder="Телефон">
+                            name="user-tel" required placeholder="Телефон">
                     </div>
                     <div class="form-field">
                         <label class="form-label visually-hidden"
                             for="user-email">Електронна
                             пошта</label>
                         <input class="form-input" type="email" id="user-email"
-                            name="user-email"
-                            required placeholder="Електронна пошта">
+                            name="user-email" required
+                            placeholder="Електронна пошта">
                     </div>
                     <button class="button form-button"
                         type="submit">Замовити дзвінок</button>
